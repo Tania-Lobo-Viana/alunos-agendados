@@ -1,0 +1,375 @@
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title> Horários agendados - Laboratório de Bioinformática </title>
+		<link type="text/css" rel="stylesheet" href="estilo.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+ <script>
+ 
+ $(function () {
+    $("td, th").dblclick(function () {
+        var conteudoOriginal = $(this).text();
+
+        $(this).addClass("celulaEmEdicao");
+        $(this).html("<input type='text' value='" + conteudoOriginal + "' />");
+        $(this).children().first().focus();
+
+        $(this).children().first().keypress(function (e) {
+            if (e.which == 13) {
+                var novoConteudo = $(this).val();
+                $(this).parent().text(novoConteudo);
+                $(this).parent().removeClass("celulaEmEdicao");
+            }
+        });
+
+	$(this).children().first().blur(function(){
+		$(this).parent().text(conteudoOriginal);
+		$(this).parent().removeClass("celulaEmEdicao");
+	});
+    });
+});
+ 
+ </script>
+ 
+	</head>
+
+	<body>
+	
+	<div align="center">
+    <table class="tabelaEditavel">
+<table class="tg" style="undefined;table-layout: fixed; width: 100%">
+<colgroup>
+<col style="width: 373px">
+<col style="width: 188px">
+<col style="width: 149px">
+<col style="width: 165px">
+<col style="width: 201px">
+<col style="width: 220px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-vx13" colspan="6">AGENDAMENTO - LABORATÓRIO DE BIOINFORMÁTICA</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-25pb">DISCENTE</td>
+    <td class="tg-25pb">MATRÍCULA</td>
+    <td class="tg-25pb">TURMA</td>
+    <td class="tg-25pb">CURSO</td>
+    <td class="tg-25pb">HORÁRIO AGENDADO</td>
+    <td class="tg-25pb">DIA / DATA</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+	
+  </tr>
+  <tr>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9"></td>
+	
+  </tr>
+  <tr>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">Beatriz Silva de Melo</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20182045497</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">T204-3MN</span></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">15/10</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">Luiz Eduardo Barbosa França</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20182045527</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">T204-3MN</span></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">15/10</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">Arthur de Freitas Dutra</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20182045496</span></td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">T204-3MN</span></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Manhã</td>
+    <td class="tg-sht9">Sempre</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Keven Hugo da Silva Morais</td>
+    <td class="tg-sht9">20182045526</td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">T204-3MN</span></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Manhã</td>
+    <td class="tg-sht9">Toda segunda-feira</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Jheniffer de Jesus Rodrigues Neves</td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20172042969</span></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">03/12/2020</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Paloma Rodrigues Costa</td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20172043069</span></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">03/12/2020</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Maria Eduarda Adelaide Melo Souza</td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20172043007</span></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">03/12/2020</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Noan Moreira da Costa</td>
+    <td class="tg-sht9"><span style="font-weight:normal;color:#000">20172043061</span></td>
+    <td class="tg-sht9"></td>
+    <td class="tg-sht9">Edificações</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">03/12/2020</td>
+  </tr>
+  <tr>
+    <td class="tg-sht9">Gabriel Evangelista Pires</td>
+    <td class="tg-sht9">20202073646</td>
+    <td class="tg-sht9">T207-1TD</td>
+    <td class="tg-sht9">Agrimensura</td>
+    <td class="tg-sht9">Tarde</td>
+    <td class="tg-sht9">Sempre</td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+  <tr>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+    <td class="tg-xwx5"></td>
+  </tr>
+</tbody>
+</table>
+</table>
+</div>
+</body>
+</html>

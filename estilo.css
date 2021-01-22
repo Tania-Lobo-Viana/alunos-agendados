@@ -1,0 +1,46 @@
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-vx13{background-color:#ffcb2f;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:22px;font-weight:bold;
+  text-align:center;vertical-align:top}
+.tg .tg-xwx5{background-color:#ffffc7;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:15px;
+  text-align:center;vertical-align:top}
+.tg .tg-25pb{background-color:#ffcc67;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:18px;
+  text-align:center;vertical-align:top}
+.tg .tg-sht9{background-color:#ffffc7;font-family:"Trebuchet MS", Helvetica, sans-serif !important;;font-size:15px;
+  text-align:center;vertical-align:bottom}
+
+.tabelaEditavel {
+    
+    width:100%
+}
+
+.tabelaEditavel td {
+    border:solid 1px;
+}
+
+.tabelaEditavel .celulaEmEdicao {
+    padding: 0;
+}
+
+.tabelaEditavel .celulaEmEdicao input[type=text]{
+    width:100%;
+    border:0;
+    background-color:rgb(255,253,210);
+}
+
+div {
+	 height: 70px;
+    width: 100%;
+    padding: 0 5px;
+    box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+}
+
+body {
+	background-color:rgb(255,253,210);
+}
